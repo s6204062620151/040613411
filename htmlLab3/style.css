@@ -1,0 +1,22 @@
+table.center{
+    margin-left: auto;
+    margin-right: auto;
+    list-style-position: inside;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+tr.line{
+    text-align: center;
+    border-bottom: 1px solid black;
+  }
+td{ 
+    text-align: center;
+}
+header{
+    text-align: center;
+}
+li{
+    text-align: center ;
+}
