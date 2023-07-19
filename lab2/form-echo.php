@@ -38,7 +38,7 @@ if($_REQUEST || $_FILES) {
 	
 	foreach($_FILES as $key => $value) {
 		$value = "File (" . $_FILES[$key]['type'] . ")(" . $_FILES[$key]['one'] . ")";
-		echo "<tr>	<td>$key</td><td>$value</td></tr>";
+		echo "<tr><td>$key</td><td>$value</td></tr>";
 	}	
 ?>
 </table>
