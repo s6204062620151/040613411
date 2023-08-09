@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .botton{
+            background:darkblue;
+            border: none;
+            padding: 10px;
+            border-radius: 15px;
+            color: white;
+            text-align: center;
+            width: 40%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        div.flexible{
+            display: flex;
+        }
+        div.content{
+                background-color: rgb(160, 160, 160);
+                padding: 2em;            
+        }      
+        @media (max-width:620px){
+            div.content{
+                background-color: rgb(160, 160, 160);
+                padding: 2em;
+            }
+            .flexible{
+                flex-direction: column;
+            }
+            .center{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .botton{
+            background:darkblue;
+            border: none;
+            padding: 10px;
+            border-radius: 15px;
+            color: white;
+            text-align: center;
+            width: 100%;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+    <div class="flexible">
+        
+		<div class="product">
+            <img src="lab4 mobile first/imgs/clock.jpg" class="center">
+        </div>
+
+        <div class="content">
+            Garmin Instinct, Rugged Outdoor Watch with GPS, 
+            Features GLONASS and Galileo, Heart Rate Monitoring and
+            3-axis Compass, Tundra<br><br>
+            <div class="wrap">
+                <div class="botton"><span class="material-symbols-outlined">add_shopping_cart</span>Add to cart</div>
+            </div>
+		</div>
+
+    </div>
+
+</body>
+</html>
