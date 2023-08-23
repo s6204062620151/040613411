@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        #outer a{ /* 1 id 1 element */
+            background-color: red;
+        }
+        #outer #inner a { /* 2 id 1 element */ 
+            background-color: blue;
+        }
+
+        #outer div ul li a { /* 1 id 4 elemnt */
+            color: yellow;
+        }
+        #outer div ul .nav a { /* 1 id 3 element 1 class */
+            color: white;
+        }
+        div div li:nth-chuld(2) a:hover { /* 4 element 2 class*/
+            border: 10px solid black;
+        }
+        div li:nth-child(2) a:hovver { /* 3 element 2 class */
+            border: 10px dashed black;
+        }
+        div div .nav:nth-chuld(2) a:hover { /* 3 element 3 class*/
+            border: 10px double black;
+        }
+
+        a{
+            display: inline-block;
+            line-height: 40px;
+            font-size: 20px;
+            text-decoration: none;
+            text-align: center;
+            width: 200px;
+            margin-bottom: 10px;
+        }
+        ul{
+            padding: 0;
+        }
+        li{
+            list-style-type: none;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="outer" class="container">
+        <div id="inner" class="container">
+            <ul>
+                <li class="nav"><a href="#">One</a></li>
+                <li class="nav"><a href="#">Two</a></li>
+            </ul>
+        </div>
+    </div>
+  </body>
+</html>
