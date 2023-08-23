@@ -2,26 +2,26 @@
 <html>
   <head>
     <style>
-        #outer a{ /* 1 id 1 element =1010 */
+        #outer a{ /* 1 id 1 element = 0010 */
             background-color: red;
         }
-        #outer #inner a { /* 2 id 1 element = 2010 */ 
+        #outer #inner a { /* 2 id 1 element = 0201 */ 
             background-color: blue;
         }
 
-        #outer div ul li a { /* 1 id 4 elemnt = 1040 */
+        #outer div ul li a { /* 1 id 4 elemnt = 0104 */
             color: yellow;
         }
-        #outer div ul .nav a { /* 1 id 3 element 1 class = 1130 */
+        #outer div ul .nav a { /* 1 id 3 element 1 class = 0113 */
             color: white;
         }
-        div div li:nth-child(2) a:hover { /* 4 element 2 class= 240 */
+        div div li:nth-child(2) a:hover { /* 4 element 2 class = 0024 */
             border: 10px solid black;
         }
-        div li:nth-child(2) a:hover { /* 3 element 2 class = 230 */
+        div li:nth-child(2) a:hover { /* 3 element 2 class = 0023 */
             border: 10px dashed black;
         }
-        div div .nav:nth-chuld(2) a:hover { /* 3 element 3 class= 330 */
+        div div .nav:nth-child(2) a:hover { /* 3 element 3 class= 0033 */
             border: 10px double black;
         }
 
