@@ -1,0 +1,17 @@
+<?php include "connect.php" ?>
+<html>
+<body>
+    
+    <?php
+        $stmt = $pdo->prepare("SELECT * FROM member");
+        $stmt->execute(); 
+        while ($row=$stmt->fetch()) :       
+        echo "ชื่อสมาชิก : " . $row["name"] . "<br>";
+        echo "ที่อยู่ : " . $row["address"] . "<br>";
+        echo "อีเมล : " . $row["email"] . "<br>";?>
+    <a href="no5.1.php?name=<?=$row["name"]?>">    
+    <img src='img/member_photo/<?=$row["name"]?>.jpg' width='100'><hr>
+    </a>
+    <?php endwhile; ?>
+</body>
+</html>
