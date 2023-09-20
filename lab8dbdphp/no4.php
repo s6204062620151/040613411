@@ -6,7 +6,10 @@
     <input type="submit" value="ค้นหา">
 </form>
     <?php
-        $stmt = $pdo->prepare("SELECT * FROM member");
+        $stmt = $pdo->prepare("SELECT * FROM member WHERE name LIKE ?");
+        if (!empty($_GET))
+        $value='%'.$_GET["keyword"].'%';
+        $stmt->bindParam(1,$value);
         $stmt->execute(); 
         while ($row=$stmt->fetch()) :       
         echo "ชื่อสมาชิก : " . $row["name"] . "<br>";
