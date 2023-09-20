@@ -1,9 +1,8 @@
 <?php
-// 1. ติดต่อฐานข ้อมูล
+
 $pdo = new PDO("mysql:host=localhost;dbname=blueshop;charset=utf8", "root", "");
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-// 2. ก าหนดรูปแบบค าสง
 ั่ SQL
 
 $stmt = $pdo->prepare("SELECT * FROM product");
