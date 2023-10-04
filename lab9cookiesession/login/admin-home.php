@@ -18,8 +18,10 @@
     while ($row = $stmt->fetch()) {
         echo "ไอดีผู้ใช้: " . $row ["username"] . "<br>";
         echo "จำนวนคำสั่งซื้อ: " . $row ["COUNT(ord_id)"] . "<br>";
+        echo "<a href='product-list-admin.php? . $row['username'] . '>แสดงรายการคำสั่งซื้อ</a>";
         echo "<hr>\n";
     }
 ?>
+
 </body>
 </html>
